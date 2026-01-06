@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Black Hole Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🕳️ Black Hole Playground</h1>
+
+  <label>
+    Black Hole Mass (× Solar Mass):
+    <input type="range" id="mass" min="1" max="50" value="10">
+  </label>
+
+  <p id="output"></p>
+  <p id="time"></p>
+
+  <canvas id="space" width="500" height="500"></canvas>
+
+  <div class="info">
+    <h3>What’s happening?</h3>
+    <p>
+      A black hole bends spacetime. The more massive it is, the stronger the curvature.
+      Time slows down near the event horizon due to extreme gravity.
+    </p>
+  </div>
+
+  <script src="physics.js"></script>
+  <script src="visualize.js"></script>
+</body>
+</html>
